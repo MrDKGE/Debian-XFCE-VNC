@@ -1,7 +1,8 @@
 services:
   lxqt:
-    build: .
-    container_name: debian-lxqt-vnc
+    # build: .
+    image: dkge/debian-xfce-vnc:latest
+    container_name: debian-xfce-vnc
     ports:
       - "6080:6080"
     environment:
